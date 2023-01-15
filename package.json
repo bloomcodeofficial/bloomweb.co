@@ -1,13 +1,13 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "@bloomcodeofficial/bloomweb.co",
   "version": "1.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "description": "Code for bloomweb.co",
+  "homepage": "https://github.com/bloomcodeofficial/bloomweb.co#readme",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://www.finsweet.com/"
+    "name": "Bloomweb",
+    "url": "https://www.bloomweb.co/"
   },
   "repository": {
     "type": "git",
