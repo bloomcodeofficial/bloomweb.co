@@ -5,7 +5,7 @@ const buildDirectory = 'dist';
 const production = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const entryPoints = ['src/index.ts', 'src/navbar.ts', 'src/swiper-slider.ts'];
+const entryPoints = ['src/index.ts', 'src/navbar.ts', 'src/swiper-slider.ts', 'src/animations.ts'];
 
 /**
  * Default Settings
