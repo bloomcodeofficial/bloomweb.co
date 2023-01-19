@@ -45,6 +45,8 @@ dropdown?.addEventListener('click', () => {
   if (window.innerWidth > 991 && dropdown.classList.contains('active-dropdown')) {
     dropdown.classList.remove('active-dropdown');
     dropdown.classList.remove('white-nav');
+    document.body.style.overflow = 'auto';
+    document.body.style.paddingRight = '0px';
   }
 });
 
