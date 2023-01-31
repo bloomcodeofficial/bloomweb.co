@@ -71,8 +71,9 @@
 
 const navbar = document.querySelector('[bw-navbar="component"]');
 const dropdownToggle = document.querySelector('[bw-navbar="toggle-dropdown1"]');
+const dropdownIcon = document.querySelector('[bw-navbar="dropdown-icon"]');
 const dropdown = document.querySelector('[bw-navbar="dropdown1"]');
-const mobileNavToggle = document.querySelector('[bw-navbar="mobile-toggle"]');
+const mobileHamburger = document.querySelector('[bw-navbar="hamburger"]');
 const mobileNav = document.querySelector('[bw-navbar="menu"]');
 let lastScrollY = window.scrollY;
 
@@ -97,11 +98,13 @@ const openDropdown = function () {
   // Toggle dropdown on desktop
   if (window.innerWidth >= 968) {
     dropdown?.classList.toggle('active-dropdown');
+    dropdownIcon?.classList.toggle('is-active');
     navbar?.classList.toggle('white-nav');
     document.body.classList.toggle('no-scroll');
     // Toggle dropdown on tablet and mobile
   } else if (window.innerWidth < 968) {
     dropdown?.classList.toggle('active-dropdown');
+    dropdownIcon?.classList.toggle('is-active');
   }
 };
 
@@ -123,8 +126,9 @@ const openMenu = function () {
   mobileNav?.classList.toggle('active-menu');
   navbar?.classList.toggle('white-nav');
   document.body.classList.toggle('no-scroll');
+  mobileHamburger?.classList.toggle('is-active');
 };
 
 dropdownToggle?.addEventListener('click', openDropdown);
 dropdown.addEventListener('click', closeDropdown);
-mobileNavToggle?.addEventListener('click', openMenu);
+mobileHamburger?.addEventListener('click', openMenu);
